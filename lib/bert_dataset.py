@@ -7,7 +7,7 @@ MAX_LEN = 512
 SEP_TOKEN_ID = 102
 DATA_DIR = "../data/"
 
-class QuestDataset(torch.utils.data.Dataset):
+class BertDataset(torch.utils.data.Dataset):
 
     def __init__(self, df, target_cols, train_mode=True, labeled=True, tokenizer=BertTokenizer,
                  tokenizer_class='bert-base-uncased'):
